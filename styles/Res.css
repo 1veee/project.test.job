@@ -1,0 +1,221 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../assets/fonts/Montserrat-Light.otf");
+}
+@font-face {
+  font-family: RFDewiExpanded;
+  font-display: swap;
+  src: url("../assets/fonts/RFDewiExpanded-Regular"), url("../assets/fonts/RFDewiExpanded-Regular.ttf"), url("../assets/fonts/RFDewiExpanded-Regular.woff");
+}
+body {
+  background: #F6F6F6;
+}
+
+._container {
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 100%;
+  background: #F6F6F6;
+}
+
+#linked .linked-content {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding: 0 20px;
+}
+
+#linked .linked-content h1 {
+  font-family: RFDewiExpanded;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 30px 0 0 0;
+  background: linear-gradient(269.96deg, #1A3286 0.05%, #1E83E0 47.93%, #1A3286 99.97%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-align: center;
+}
+
+#linked .linked-content p {
+  font-family: RFDewiExpanded;
+  color: #2E344B;
+  font-size: 20px;
+  text-align: center;
+  margin: 50px 0 0 0;
+}
+
+#linked button {
+  font-family: RFDewiExpanded;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #1D5DB5;
+  outline: 1px solid #1D5DB5;
+  padding: 30px 60px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+  z-index: 1;
+  margin: 20px 20px 20px 0;
+}
+#linked button:hover {
+  color: white;
+}
+#linked button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 0;
+  height: 100%;
+  color: white;
+  background-color: #1D5DB5;
+  -webkit-transform: skewX(35deg);
+          transform: skewX(35deg);
+  z-index: -1;
+  -webkit-transition: width 1s;
+  transition: width 1s;
+}
+#linked button:hover::before {
+  width: 150%;
+}
+
+#linked .linked-item h1 {
+  font-family: RFDewiExpanded;
+  font-size: 40px;
+  font-weight: bold;
+  background: linear-gradient(269.96deg, #1A3286 0.05%, #1E83E0 47.93%, #1A3286 99.97%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-align: center;
+  padding: 20px 0 20px 20px;
+}
+
+#linked .linked-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 60px 0;
+}
+
+#linked .linked-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid #1D5DB5;
+  margin: 40px 0;
+}
+
+#linked .linked-item {
+  margin: 0 20px;
+}
+
+@media (max-width: 600px) {
+  #linked .linked-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}

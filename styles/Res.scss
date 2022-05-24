@@ -1,0 +1,156 @@
+@import './nullstyle.scss';
+
+$Blue: #1D5DB5;
+$DarkBlue: #2E344B;
+$Orange: #EB5829;
+$Grey: #FCFCFC;
+$Grey-fon:#F6F6F6;
+
+
+
+@font-face {
+    font-family: Montserrat;
+    font-display: swap;
+    src: url("../assets/fonts/Montserrat-Light.otf");
+}
+@font-face {
+    font-family: RFDewiExpanded;
+    font-display: swap;
+    src: url("../assets/fonts/RFDewiExpanded-Regular"),
+    url("../assets/fonts/RFDewiExpanded-Regular.ttf"),
+    url("../assets/fonts/RFDewiExpanded-Regular.woff");
+}
+body{
+    background: $Grey-fon;
+}
+._container {
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+    background: $Grey-fon;
+}
+#linked .linked-content{
+    box-sizing: content-box;
+    padding: 0 20px;
+}
+
+#linked .linked-content h1{
+    font-family: RFDewiExpanded;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 30px 0 0 0 ;
+
+
+
+        background: linear-gradient(269.96deg, #1A3286 0.05%, #1E83E0 47.93%, #1A3286 99.97%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-align: center;
+}
+#linked .linked-content p{
+    font-family: RFDewiExpanded;
+    color: $DarkBlue;
+    font-size: 20px;
+    text-align: center;
+    margin: 50px 0 0 0;
+}
+#linked button{
+    font-family: RFDewiExpanded;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: $Blue;
+    outline: 1px solid $Blue;
+   
+    padding: 30px 60px;
+    position: relative;
+    overflow: hidden;
+    transition: color 1s;
+    z-index: 1;
+    margin: 20px 20px 20px 0;
+    &:hover{
+        color: white;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -50px;
+        width: 0;
+        height: 100%;
+        color: white;
+        background-color: $Blue;
+        transform: skewX(35deg);
+        z-index: -1;
+        transition: width 1s;
+    }
+    &:hover::before{
+        width: 150%;
+    }
+}
+#linked .linked-item h1{
+    font-family: RFDewiExpanded;
+    font-size: 40px;
+    font-weight: bold;
+    background: linear-gradient(269.96deg, #1A3286 0.05%, #1E83E0 47.93%, #1A3286 99.97%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-align: center;
+    padding: 20px 0 20px 20px;
+}
+
+#linked .linked-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    margin: 60px 0;
+}
+
+
+#linked .linked-row{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid $Blue;
+    margin: 40px 0;
+}
+#linked .linked-item{
+    margin: 0 20px;
+}
+
+
+@media (max-width: 600px){
+    #linked .linked-row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
